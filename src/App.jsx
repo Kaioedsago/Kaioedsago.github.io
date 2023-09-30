@@ -1,8 +1,7 @@
-function App() {
+const App = () =>{
 
   return (
     <>
-      <h1>Bó que Bó</h1>
     </>
   )
 }
