@@ -21,9 +21,6 @@ export const topics = [
     title: 'Projetos',
     path: 'Projects'
   },
-  // {title: 'Contato',
-  //  path: 'Contact'
-  // }
 ];
 
 

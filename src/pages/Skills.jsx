@@ -1,8 +1,8 @@
 const Skills = () => {
     return(
-        <>
-        <h1>Skills</h1>
-        </>
+        <div className="w-screen h-screen bg-blue-400">
+            skills
+       </div>
     )
 }
 

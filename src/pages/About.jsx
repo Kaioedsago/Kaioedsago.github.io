@@ -1,8 +1,8 @@
 const About = () => {
     return(
-        <>
-        <h1>About</h1>
-        </>
+       <div className="w-screen h-screen bg-black">
+            a
+       </div>
     )
 }
 
