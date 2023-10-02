@@ -1,6 +1,6 @@
 const About = () => {
     return(
-       <div className="w-screen h-screen bg-black">
+       <div className=" text-white bg-black">
             a
        </div>
     )

@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      boxShadow: {
-        'custom-hover': '0 0 2em 0.5em var(--purple-900)',
+      screens: {
+        'tablet': '640px',
+        // => @media (min-width: 640px) { ... }
+        
+        'desktop': '1280px',
+        // => @media (min-width: 1280px) { ... }
       },
     },
   },

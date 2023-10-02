@@ -6,7 +6,7 @@ import { topics } from "../routes/Rotas";
 const Header = () => {
     const [open, setOpen] =useState(false);
   return (
-    <div className={`w-full z-10 absolute top-0 left-0 ${ open ? "text-black bg-white" : "text-white"}`}>
+    <div className={`w-full relative z-10 top-0 left-0 ${ open ? "text-black bg-white" : "text-white"}`}>
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
