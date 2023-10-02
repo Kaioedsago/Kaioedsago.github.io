@@ -52,34 +52,3 @@ const Header = () => {
 
 export default Header;
 
-// return (
-//     <div className="shadow-md w-full fixed top-0 left-0">
-//       <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-//         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
-//           <CodeBracketSquareIcon className="w-9 h-9 text-purple-900" />
-//           <span className="font-bold">Kaio Eduardo</span>
-//         </div>
-
-//         {/* Nav Links */}
-//         <div>
-//           <ul className="flex pl-9 md:pl-0 cursor-pointer">
-//             {topics.map((topic, index) => (
-//               <li className="font-semibold my-7 md:my-0 md:ml-8" key={index}>
-//                 <Link
-//                   activeClass="active"
-//                   to={topic.path}
-//                   spy={true}
-//                   smooth={true}
-//                   offset={-70} // Ajuste este valor conforme necessário
-//                   duration={500}
-//                   className="text-blue-900"
-//                 >
-//                   {topic.title}
-//                 </Link>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </div>
-//   );
