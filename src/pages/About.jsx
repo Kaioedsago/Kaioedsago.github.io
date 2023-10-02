@@ -1,8 +1,8 @@
 const About = () => {
     return(
-        <>
-        <h1>About</h1>
-        </>
+        <div>
+            <span className="ml-24 text-2xl text-white">Soon...</span>
+        </div>
     )
 }
 
