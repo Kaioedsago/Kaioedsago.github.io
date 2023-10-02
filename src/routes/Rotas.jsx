@@ -21,9 +21,9 @@ export const topics = [
     title: 'Projetos',
     path: 'Projects'
   },
-  {title: 'Contato',
-   path: 'Contact'
-  }
+  // {title: 'Contato',
+  //  path: 'Contact'
+  // }
 ];
 
 
