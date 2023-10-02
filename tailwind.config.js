@@ -1,28 +1,16 @@
-const plugin = require("tailwindcss/plugin");
-
-module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
-        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
-        lg: "0 8px 16px var(--tw-shadow-color)",
+      boxShadow: {
+        'custom-hover': '0 0 2em 0.5em var(--purple-900)',
       },
     },
   },
-  plugins: [
-    plugin(function ({ addUtilities, theme }) {
-      const textShadowUtilities = {};
-      const values = theme("textShadow");
+  plugins: [],
+}
 
-      for (const key in values) {
-        textShadowUtilities[`.text-shadow-${key}`] = {
-          textShadow: values[key],
-        };
-      }
-
-      addUtilities(textShadowUtilities, ["hover"]);
-    }),
-  ],
-};

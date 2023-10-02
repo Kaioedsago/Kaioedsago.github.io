@@ -6,7 +6,7 @@ import { topics } from "../routes/Rotas";
 const Header = () => {
     const [open, setOpen] =useState(false);
   return (
-    <div className={`w-full fixed top-0 left-0 ${ open ? "text-black bg-white" : "text-white"}`}>
+    <div className={`w-full z-10 relative top-0 left-0 mb-14 ${ open ? "text-black bg-white" : "text-white"}`}>
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7">
         {/* logo section */}
         <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
@@ -27,7 +27,7 @@ const Header = () => {
           }`}
         >
           {topics.map((topic, index) => (
-               <li className="font-semibold w-fit px-2 cursor-pointer my-7 rounded-full md:my-0 md:ml-8 hover:bg-purple-900 hover:bg-opacity-60 hover:shadow-[0_0_2em_0.5em] hover:shadow-purple-900 hover:transition-opacity hover:duration-100 hover:ease-linear" key={index}>
+               <li className="font-semibold w-fit px-2 cursor-pointer my-7 rounded-full md:my-0 md:ml-8 hover:bg-purple-600 hover:bg-opacity-[46.5%] hover:shadow-[0_0_2em_0.5em] hover:shadow-purple-600 hover:transition-opacity hover:duration-100 hover:ease-out" key={index}>
                  <Link
                    activeClass="active"
                    to={topic.path}
@@ -40,7 +40,7 @@ const Header = () => {
                  </Link>
                </li>
              ))}
-          <button className="btn bg-purple-900 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static hover:bg-purple-900 hover:shadow-[0_0_2em_0.5em] hover:shadow-purple-900 hover:transition-opacity hover:duration-100 hover:ease-linear">
+          <button className="btn bg-purple-900 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static hover:bg-purple-900 hover:shadow-[0_0_2em_0.5em] hover:shadow-purple-600 hover:transition-opacity hover:duration-100 hover:ease-linear">
            Contato
           </button>
         </ul>
